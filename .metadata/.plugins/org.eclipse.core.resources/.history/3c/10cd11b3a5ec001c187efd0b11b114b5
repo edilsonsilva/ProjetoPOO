@@ -1,0 +1,6 @@
+package classes;
+
+public abstract class Um {
+	String nome;
+	public String email;
+}

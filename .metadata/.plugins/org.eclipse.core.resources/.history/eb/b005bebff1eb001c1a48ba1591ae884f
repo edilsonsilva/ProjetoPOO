@@ -1,0 +1,14 @@
+package classes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+	//atributos da classe cliente
+	public String nome;
+	public String email;
+	public String cpf;
+		
+	
+}
+

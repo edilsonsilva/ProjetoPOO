@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.yattasolutions.diagrams.classdiagram.newModelAndClassdiagramWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.emf.ecore.Wizard.category.ID"/>
+			<item value="com.yattasolutions.umllab.category"/>
+			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/com.yattasolutions.umllab.Examples"/>
+		</list>
+	</section>
+</section>

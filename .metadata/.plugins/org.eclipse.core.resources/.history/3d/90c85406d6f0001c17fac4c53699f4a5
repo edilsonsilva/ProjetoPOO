@@ -1,0 +1,41 @@
+package classes;
+
+public class TransacaoPoupanca implements OperacoesPoupanca{
+
+	@Override
+	public String abrirConta(ContaPoupanca conta) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String depositar(double valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String sacar(double valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String saldo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String transferencia(double valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String rentabilidade() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,29 @@
+package atividades.livro;
+
+import java.util.Scanner;//programa utiliza a classe Scanner para interagir com o usuário
+
+public class Pag36 {
+
+	public static void main(String[] args) {
+
+		//cria um Scanner para obter a entrada a partir da janela de comando
+		Scanner input = new Scanner(System.in);
+		int number1;
+		int number2;
+		int sum;
+		
+		System.out.println("Entre com o primeiro numero");;
+		number1 = input.nextInt();
+		
+		System.out.println("Entre com o segundo numero");;
+		number2 = input.nextInt();
+		
+		sum = number1 + number2;
+		
+		System.out.printf("O resultado da soma é %d%n",sum);	
+		
+		
+
+	}
+
+}

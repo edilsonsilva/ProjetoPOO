@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_CCfjEPCjEeyWIKPngG912Q">
+  <modelElement href="POO.uml#_CBVFcPCjEeyWIKPngG912Q"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ezj8gPCjEeyWIKPngG912Q" name="PrjUsuario">
+    <modelElement href="POO.uml#_CS5WkPCjEeyWIKPngG912Q"/>
+    <visualProperties xmi:id="_Ezj8gfCjEeyWIKPngG912Q" position="215.0,219.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ezj8gvCjEeyWIKPngG912Q" label="+"/>
+    <attributes xmi:id="_Ezj8g_CjEeyWIKPngG912Q" name="idUsuario">
+      <modelElement href="POO.uml#_CXdGcfCjEeyWIKPngG912Q"/>
+      <stereotypes xmi:id="_Ezj8hPCjEeyWIKPngG912Q" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_CXdtgPCjEeyWIKPngG912Q"/>
+      </stereotypes>
+      <visibility xmi:id="_Ezj8hfCjEeyWIKPngG912Q" label="+"/>
+      <cardinality xmi:id="_Ezj8hvCjEeyWIKPngG912Q" label="1" max="1" min="1"/>
+      <type xmi:id="_Ezj8h_CjEeyWIKPngG912Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ezj8iPCjEeyWIKPngG912Q" name="nomeUsuario">
+      <modelElement href="POO.uml#_CXdtgfCjEeyWIKPngG912Q"/>
+      <stereotypes xmi:id="_Ezj8ifCjEeyWIKPngG912Q" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_CXdtgvCjEeyWIKPngG912Q"/>
+      </stereotypes>
+      <visibility xmi:id="_Ezj8ivCjEeyWIKPngG912Q" label="+"/>
+      <cardinality xmi:id="_Ezj8i_CjEeyWIKPngG912Q" label="1" max="1" min="1"/>
+      <type xmi:id="_Ezj8jPCjEeyWIKPngG912Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ezj8jfCjEeyWIKPngG912Q" name="senha">
+      <modelElement href="POO.uml#_CXeUkPCjEeyWIKPngG912Q"/>
+      <stereotypes xmi:id="_Ezj8jvCjEeyWIKPngG912Q" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_CXeUkfCjEeyWIKPngG912Q"/>
+      </stereotypes>
+      <visibility xmi:id="_Ezj8j_CjEeyWIKPngG912Q" label="+"/>
+      <cardinality xmi:id="_Ezj8kPCjEeyWIKPngG912Q" label="1" max="1" min="1"/>
+      <type xmi:id="_Ezj8kfCjEeyWIKPngG912Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

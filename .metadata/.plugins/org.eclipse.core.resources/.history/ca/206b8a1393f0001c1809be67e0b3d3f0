@@ -1,0 +1,115 @@
+package aplicacao;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.awt.Window.Type;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+
+public class FormCliente extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtIdCliente;
+	private JTextField txtNomeCliente;
+	private JTextField textField;
+	private JTextField txtIdUsuario;
+	private JTextField txtNomeUsuario;
+	private JPasswordField txtSenha;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormCliente frame = new FormCliente();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FormCliente() {
+		setTitle("Gerenciar Clientes");
+		setBackground(new Color(230, 230, 250));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 558, 459);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 245, 238));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblIdCliente = new JLabel("Id do Cliente:");
+		lblIdCliente.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblIdCliente.setBounds(28, 35, 122, 30);
+		contentPane.add(lblIdCliente);
+		
+		txtIdCliente = new JTextField();
+		txtIdCliente.setBounds(28, 61, 99, 30);
+		contentPane.add(txtIdCliente);
+		txtIdCliente.setColumns(10);
+		
+		JLabel lblNomeCliente = new JLabel("Nome do Cliente:");
+		lblNomeCliente.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblNomeCliente.setBounds(137, 44, 156, 14);
+		contentPane.add(lblNomeCliente);
+		
+		txtNomeCliente = new JTextField();
+		txtNomeCliente.setBounds(137, 61, 371, 30);
+		contentPane.add(txtNomeCliente);
+		txtNomeCliente.setColumns(10);
+		
+		JLabel lblEmail = new JLabel("E-Mail:");
+		lblEmail.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblEmail.setBounds(28, 117, 122, 14);
+		contentPane.add(lblEmail);
+		
+		textField = new JTextField();
+		textField.setBounds(28, 136, 480, 30);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblIdUsuario = new JLabel("Id do Usu\u00E1rio:");
+		lblIdUsuario.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblIdUsuario.setBounds(28, 192, 122, 30);
+		contentPane.add(lblIdUsuario);
+		
+		txtIdUsuario = new JTextField();
+		txtIdUsuario.setColumns(10);
+		txtIdUsuario.setBounds(28, 220, 99, 30);
+		contentPane.add(txtIdUsuario);
+		
+		JLabel lblNomeUsuario = new JLabel("Nome do Usu\u00E1rio:");
+		lblNomeUsuario.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblNomeUsuario.setBounds(137, 200, 156, 14);
+		contentPane.add(lblNomeUsuario);
+		
+		txtNomeUsuario = new JTextField();
+		txtNomeUsuario.setColumns(10);
+		txtNomeUsuario.setBounds(137, 220, 179, 30);
+		contentPane.add(txtNomeUsuario);
+		
+		txtSenha = new JPasswordField();
+		txtSenha.setBounds(326, 220, 182, 30);
+		contentPane.add(txtSenha);
+		
+		JLabel lblSenha = new JLabel("Senha:");
+		lblSenha.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblSenha.setBounds(326, 200, 156, 14);
+		contentPane.add(lblSenha);
+	}
+}

@@ -1,0 +1,28 @@
+package aplicacao;
+
+import classes.Cliente;
+import java.util.Scanner;
+
+public class AppCliente {
+
+	public static void main(String[] args) {
+
+		Scanner tela = new Scanner(System.in);
+		
+		Cliente cli = new Cliente();
+		System.out.println("Digite o nome do cliente: ");
+		cli.nome = tela.next();
+		
+		System.out.println("Digite o email do cliente: ");
+		cli.email=tela.next();
+		
+		System.out.println("Digite o cpf do cliente: ");
+		cli.cpf = tela.next();
+		
+		cli.cadastrar(cli);
+		System.out.println("---------------- Clientes cadastrados--------------------");
+		cli.listar();
+		
+	}
+
+}

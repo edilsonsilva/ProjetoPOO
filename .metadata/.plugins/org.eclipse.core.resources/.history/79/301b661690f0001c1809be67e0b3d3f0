@@ -1,0 +1,60 @@
+package aplicacao;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.awt.Window.Type;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+
+public class FormCliente extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtIdCliente;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormCliente frame = new FormCliente();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FormCliente() {
+		setTitle("Gerenciar Clientes");
+		setBackground(new Color(230, 230, 250));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 728, 459);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 245, 238));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblIdCliente = new JLabel("Id do Cliente:");
+		lblIdCliente.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblIdCliente.setBounds(28, 35, 122, 30);
+		contentPane.add(lblIdCliente);
+		
+		txtIdCliente = new JTextField();
+		txtIdCliente.setBounds(28, 61, 99, 30);
+		contentPane.add(txtIdCliente);
+		txtIdCliente.setColumns(10);
+	}
+}

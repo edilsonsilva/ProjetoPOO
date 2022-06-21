@@ -1,0 +1,49 @@
+package classes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+	//atributos da classe cliente
+	public String nome;
+	public String email;
+	public String cpf;
+	
+	//Métodos para cadastrar, listar, atualizar e deletar
+	public void cadastrar(Cliente novoCliente) {
+		/*Vamos cadastrar os clientes em uma lista de 
+		 * dados. Esta lista guardará os dados em memória.
+		 * Todo novo cliente será inserido nesta lista.
+		 * Utilizaremos o comando List e a implementação será 
+		 * feita com o comando ArrayList. Ambos devem ser importados
+		 * 
+		 */
+		List<Cliente> lista = new ArrayList<Cliente>();
+		//adicionar novos clientes e a lista
+		lista.add(novoCliente);		
+	}
+	public void listar() {
+		System.out.println(this.nome + " - "+this.email+" - "+this.cpf);
+	}
+	public void atualizar(Cliente cliente) {
+		if(cliente.nome != this.nome) {
+			System.out.println("Cliente não encontrado");
+		}
+		else {
+			this.nome = cliente.nome;
+			this.email = cliente.email;
+			this.cpf = cliente.cpf;
+		}
+	}
+	public void deletar(String nome) {
+		if(nome != this.nome) {
+			System.out.println("Cliente não encontrado");
+		}
+		else {
+			this.nome = "";
+			this.email = "";
+			this.cpf = "";
+		}
+	}
+}
+

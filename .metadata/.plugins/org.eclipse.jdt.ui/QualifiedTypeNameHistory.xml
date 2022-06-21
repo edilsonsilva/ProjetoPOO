@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="classes.Um"/>
+    <fullyQualifiedTypeName name="repositorio.RepoSistema"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="classes.ContaBancaria"/>
+    <fullyQualifiedTypeName name="classes.OperacoesPoupanca"/>
+    <fullyQualifiedTypeName name="classes.ContaPoupanca"/>
+</qualifiedTypeNameHistroy>

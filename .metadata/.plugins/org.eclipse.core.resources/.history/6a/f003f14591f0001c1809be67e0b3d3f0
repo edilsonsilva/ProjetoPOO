@@ -1,0 +1,82 @@
+package aplicacao;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.awt.Window.Type;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+
+public class FormCliente extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtIdCliente;
+	private JTextField txtNomeCliente;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormCliente frame = new FormCliente();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FormCliente() {
+		setTitle("Gerenciar Clientes");
+		setBackground(new Color(230, 230, 250));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 728, 459);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 245, 238));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblIdCliente = new JLabel("Id do Cliente:");
+		lblIdCliente.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblIdCliente.setBounds(28, 35, 122, 30);
+		contentPane.add(lblIdCliente);
+		
+		txtIdCliente = new JTextField();
+		txtIdCliente.setBounds(28, 61, 99, 30);
+		contentPane.add(txtIdCliente);
+		txtIdCliente.setColumns(10);
+		
+		JLabel lblNomeCliente = new JLabel("Nome do Cliente:");
+		lblNomeCliente.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblNomeCliente.setBounds(160, 44, 156, 14);
+		contentPane.add(lblNomeCliente);
+		
+		txtNomeCliente = new JTextField();
+		txtNomeCliente.setBounds(148, 61, 360, 30);
+		contentPane.add(txtNomeCliente);
+		txtNomeCliente.setColumns(10);
+		
+		JLabel lblEmail = new JLabel("E-Mail:");
+		lblEmail.setFont(new Font("Swis721 LtEx BT", Font.PLAIN, 14));
+		lblEmail.setBounds(28, 117, 122, 14);
+		contentPane.add(lblEmail);
+		
+		textField = new JTextField();
+		textField.setBounds(28, 136, 480, 30);
+		contentPane.add(textField);
+		textField.setColumns(10);
+	}
+}

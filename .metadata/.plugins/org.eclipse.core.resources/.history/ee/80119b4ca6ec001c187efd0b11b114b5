@@ -1,0 +1,10 @@
+package classes;
+
+public abstract class Um {
+	static String nome;
+	static String email;
+	
+	static void mensagem() {
+		System.out.println(nome);
+	}
+}
